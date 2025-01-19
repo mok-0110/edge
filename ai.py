@@ -106,7 +106,7 @@ def minimax(board, stone, depth, alpha, beta, maximizing_player):
 def is_terminal(board):
     return not (valid_moves(board, BLACK) or valid_moves(board, WHITE))
 
-class EdgePriorityAI:
+class EdgeAI:
     def face(self):
         return "🌟"
 
@@ -115,4 +115,4 @@ class EdgePriorityAI:
         if move is None:
             return random.choice(valid_moves(board, stone))  # 手がある場合はランダム選択
         return move
-run_othello(EdgePriorityAI())
+play_othello(EdgeAI())
