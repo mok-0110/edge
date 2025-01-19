@@ -1,6 +1,9 @@
 !pip install -U kogi-canvas
 
-from kogi_canvas import play_othello, PandaAI
+# リポジトリをクローンし、AIをインポート
+!rm -rf edge  # データを消す
+!git clone https://github.com/mok-0110/edge.git
+from edge.ai import EdgeAI  # 自分のAIをインポートする
 
 import math
 import random
