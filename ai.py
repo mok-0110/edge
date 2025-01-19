@@ -1,3 +1,7 @@
+!pip install -U kogi-canvas
+
+from kogi_canvas import play_othello, PandaAI
+
 import math
 import random
 
