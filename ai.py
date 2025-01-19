@@ -115,4 +115,4 @@ class EdgePriorityAI:
         if move is None:
             return random.choice(valid_moves(board, stone))  # 手がある場合はランダム選択
         return move
-play_othello(EdgePriorityAI())
+run_othello(EdgePriorityAI())
