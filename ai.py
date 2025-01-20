@@ -122,4 +122,4 @@ class EdgeAI:
         if move is None:
             return random.choice(valid_moves(board, stone))  # 手がある場合はランダム選択
         return move
-run_othello(EdgeAI())
+play_othello(EdgeAI())
